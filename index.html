@@ -5,16 +5,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
         <title>Odin: Admin Dashboard</title>
     </head>
 
     <body>
         <div class="container">
-            <nav class="sidenav">
 
+            <header class="header">
+                <div class="search-bar">
+                    <label for="search-field">
+                        <img class="icon" src="./images/search.svg" alt="search-icon">
+                    </label>
+                    <input type="text" id="search-field">
+                </div>
+
+                <div class="user-profile">
+                    <a href="#">
+                        <img class="icon" src="./images/notifications.svg" alt="notifications-icon">
+                    </a>
+                    <img class="avatar-small" src="./images/avatar-01.svg" alt="avatar-icon">
+                    <span>John Doe</span>
+                </div>
+
+                <div class="user-welcome">
+                    <img class="avatar-big" src="./images/avatar-01.svg" alt="avatar-icon">
+                    <div>
+                        <p>Hi there,</p>
+                        <p>Morgan Oakley (@morgan)</p>
+                    </div>
+                </div>
+
+                <div class="user-buttons">
+                    <button type="button">New</button>
+                    <button type="button">Upload</button>
+                    <button type="button">Share</button>
+                </div>
+            </header>
+
+            <nav class="sidenav">
                 <div class="logo">
                     <a href="#">
-                        <img src="./images/dashboard.svg" alt="dashboard-icon">
+                        <img class="icon" src="./images/dashboard.svg" alt="dashboard-icon">
                         <span>Dashboard</span>
                     </a>
                 </div>
@@ -23,37 +58,37 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="./images/home.svg" alt="home-icon">
+                                <img class="icon" src="./images/home.svg" alt="home-icon">
                                 <span>Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/profile.svg" alt="profile-icon">
+                                <img class="icon" src="./images/profile.svg" alt="profile-icon">
                                 <span>Profile</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/messages.svg" alt="messages-icon">
+                                <img class="icon" src="./images/messages.svg" alt="messages-icon">
                                 <span>Messages</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/history.svg" alt="history-icon">
+                                <img class="icon" src="./images/history.svg" alt="history-icon">
                                 <span>History</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/tasks.svg" alt="tasks-icon">
+                                <img class="icon" src="./images/tasks.svg" alt="tasks-icon">
                                 <span>Tasks</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/communities.svg" alt="communities-icon">
+                                <img class="icon" src="./images/communities.svg" alt="communities-icon">
                                 <span>Communities</span>
                             </a>
                         </li>
@@ -64,19 +99,19 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="./images/settings.svg" alt="settings-icon">
+                                <img class="icon" src="./images/settings.svg" alt="settings-icon">
                                 <span>Settings</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/support.svg" alt="support-icon">
+                                <img class="icon" src="./images/support.svg" alt="support-icon">
                                 <span>Support</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/privacy.svg" alt="privacy-icon">
+                                <img class="icon" src="./images/privacy.svg" alt="privacy-icon">
                                 <span>Privacy</span>
                             </a>
                         </li>
