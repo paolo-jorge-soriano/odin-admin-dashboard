@@ -23,8 +23,11 @@ body {
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 2fr 1fr;
     background-color: #fdfdfd;
-    padding: 20px 50px;
     box-shadow: 0px 3px 5px 1px #C1C1C1;
+}
+
+.header, .main-content {
+    padding: 20px 50px;
 }
 
 .search-bar {
@@ -140,4 +143,57 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    gap: 30px;
+}
+
+.projects .section-title {
+    grid-column: 1 / -1;
+}
+
+.section-title h2 {
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    border-left: 15px solid #ffb019;
+    background-color: white;
+    padding: 15px;
+    gap: 10px;
+    height: 200px;
+}
+
+.card > * {
+    margin: 0;
+    padding: 0;
+}
+
+.card-actions {
+    text-align: right;
+}
+
+.card-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.side-content {
+    display: grid;
 }
